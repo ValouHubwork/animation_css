@@ -1,0 +1,49 @@
+body
+{
+    width: 900px;
+    height: 800px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.btn
+{
+    width: 100px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: #e17055;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btn1:hover
+{
+    animation: zoom_resp 1s infinite ease-out;
+}
+
+#btn2
+{
+    transition: all 0.1s ease-in;
+}
+
+@keyframes zoom_resp
+{
+    0%{
+        width: 100px;
+        height: 50px;
+    }
+    50%{
+        width: 110px;
+        height: 55px;
+    }
+    100%{
+        width: 100px;
+        height: 50px;
+    }
+}
