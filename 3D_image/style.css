@@ -1,0 +1,74 @@
+body
+{
+    background-color: blanchedalmond;
+}
+
+.img_test
+{
+    width: 100vw;
+    height: 700px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 300px;
+}
+
+.cadre
+{
+    width: 200px;
+    height: 350px;
+    border-radius: 15px;
+    background: url(./ressources/img/Sett_45.jpg) center;
+    background-size: 600px;
+    transition: all 0.2s;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cadre:hover
+{
+    transition: all 0.3s;
+    background: #151922 center;
+}
+
+.img_sett_zoom
+{
+    position: absolute;
+    width: 300px; /* a ajuster en fonction de l'image*/
+    height: 380px; /*idem*/
+    background: url(./ressources/img/Sett_45-removebg-preview.png) center; /*image à modifier*/
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+    pointer-events: none;
+}
+
+.cadre_2
+{
+    position: relative;
+    overflow: visible;
+}
+
+#img_cadre_2
+{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 600px; /*valeur a modif*/
+    height: 500px; /*valeur a modif*/
+    background: url(./ressources/img/Sett_45-removebg-preview.png) bottom no-repeat;
+    /* background-size: cover; */
+    z-index: 10;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+
+    pointer-events: none;
+}
